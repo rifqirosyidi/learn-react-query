@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { Nav, Origin, Name } from "./components";
 
 function App() {
+  const [page, setPage] = useState("origin");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-gray-800 h-screen">
+      <h1 className="text-center text-4xl py-10 font-bold text-yellow-300">
+        Star Wars Info
+      </h1>
+      <Nav setPage={setPage} />
+      <div className="container mx-auto px-40">
+        {page === "origin" ? <Origin /> : <Name />}
+      </div>
     </div>
   );
 }
