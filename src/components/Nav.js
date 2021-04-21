@@ -4,16 +4,16 @@ export const Nav = ({ setPage }) => {
   return (
     <nav className="container mx-auto flex justify-center space-x-2">
       <button
-        className="font-bold bg-yellow-300 px-4 py-2 rounded-sm hover:bg-yellow-200"
-        onClick={() => setPage("name")}
+        className="font-light text-gray-300 border border-gray-300 py-1 px-5 hover:border-white hover:text-white transition duration-500 focus:bg-white focus:text-black focus:outline-none bg-gray-700"
+        onClick={() => setPage("people")}
       >
-        Name
+        People
       </button>
       <button
-        className="font-bold bg-yellow-300 px-4 py-2 rounded-sm hover:bg-yellow-200"
-        onClick={() => setPage("origin")}
+        className="font-light text-gray-300 border border-gray-300 py-1 px-5 hover:border-white hover:text-white transition duration-500 focus:bg-white focus:text-black focus:outline-none bg-gray-700"
+        onClick={() => setPage("planets")}
       >
-        Origin
+        Planets
       </button>
     </nav>
   );

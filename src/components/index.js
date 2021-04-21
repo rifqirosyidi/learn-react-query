@@ -1,3 +1,3 @@
 export { Nav } from "./Nav";
-export { Name } from "./Name";
-export { Origin } from "./Origin";
+export { Peoples } from "./Peoples";
+export { Planets } from "./Planets";
